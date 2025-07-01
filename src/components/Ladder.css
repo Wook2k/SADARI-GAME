@@ -1,0 +1,167 @@
+.ladder-wrapper {
+  position: relative;
+  width: 520px;
+  margin: 30px auto;
+  padding: 20px 25px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.ladder-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.ladder-top-buttons {
+  position: relative;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.ladder-participant-btn {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  font-size: 13px;
+  padding: 6px 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.ladder-participant-btn:hover:not(:disabled) {
+  background-color: #217dbb;
+}
+
+.ladder-participant-btn:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.ladder-canvas {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  background-color: #fafafa;
+}
+
+.ladder-results-row {
+  position: relative;
+  height: 30px;
+  margin-top: 20px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ladder-result-label {
+  position: absolute;
+  width: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  user-select: none;
+  color: #2980b9;
+}
+
+.ladder-result-label.inactive {
+  color: #bbb;
+}
+
+.ladder-action-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ladder-action-buttons button {
+  background-color: #3498db;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(52,152,219,0.4);
+  transition: background-color 0.3s ease;
+  min-width: 110px;
+}
+
+.ladder-action-buttons button:hover:not(:disabled) {
+  background-color: #217dbb;
+  box-shadow: 0 6px 18px rgba(33,125,187,0.6);
+}
+
+.ladder-action-buttons button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.ladder-summary {
+  margin-top: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  border-radius: 14px;
+  background-color: #f9f9f9;
+  user-select: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
+
+.ladder-summary h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+  color: #34495e;
+}
+
+.ladder-summary ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.ladder-summary li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 600;
+  color: #34495e;
+  transition: background-color 0.2s ease;
+}
+
+.ladder-summary li:last-child {
+  border-bottom: none;
+}
+
+.ladder-summary li.inactive {
+  color: #999;
+  font-weight: 400;
+}
+
+.ladder-summary li:hover {
+  background-color: #eaf3fb;
+}

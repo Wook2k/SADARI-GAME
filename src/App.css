@@ -1,38 +1,119 @@
-.App {
+/* App.css */
+
+.app-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  user-select: none;
+}
+
+.app-title {
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #34495e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.group-list {
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons-row {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  padding: 10px 22px;
+  font-size: rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  margin: 0 8px;
   color: white;
+  background-color: #3498db;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:not(:disabled):hover {
+  background-color: #217dbb;
+}
+
+.group-section {
+  margin-bottom: 50px;
+}
+
+.group-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2980b9;
+  font-weight: 700;
+}
+
+.summary-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px 30px;
+  background-color: #fafafa;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.summary-title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #34495e;
+  font-weight: 700;
+}
+
+.summary-group {
+  margin-bottom: 25px;
+}
+
+.summary-group h4 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.summary-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+}
+
+.summary-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.summary-list li:last-child {
+  border-bottom: none;
+}
+
+.summary-list li.empty {
+  color: #999;
+  font-style: italic;
+  justify-content: center;
 }

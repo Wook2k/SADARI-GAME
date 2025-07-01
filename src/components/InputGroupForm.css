@@ -1,0 +1,117 @@
+/* components/InputGroupForm.css */
+
+.input-group-wrapper {
+    border: 1px solid #ddd;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #34495e;
+  }
+  
+  .input-group-wrapper h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #2c3e50;
+  }
+  
+  .input-group-remove-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 12px;       /* 폰트 크기 조금 더 줄임 */
+    line-height: 1;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 0;          /* 최소 너비 강제 제거 */
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  
+  
+  .input-group-remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+  
+  .input-text {
+    flex: 1 1 40%;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-text:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+  }
+  
+  .input-remove-btn {
+    width: 70px;        /* 고정 너비 */
+    min-width: 0;       /* 최소 너비 제거 */
+    padding: 6px 0;     /* 좌우 패딩 없앰 */
+    font-size: 0.9rem;  /* 폰트 크기 조절 */
+    text-align: center;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  
+  .input-remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-add-participant {
+    padding: 10px 22px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #27ae60;
+    color: white;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-top: 10px;
+    min-width: 140px;
+  }
+  
+  .btn-add-participant:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .btn-add-participant:not(:disabled):hover {
+    background-color: #1e8449;
+  }
+  
